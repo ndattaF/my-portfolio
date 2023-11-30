@@ -480,6 +480,10 @@ header {
 }
 
 img.animated-gif{
+  display: block;  
+  margin-left: auto;  
+  margin-right: auto;
   width: 500px;
   height: auto;
+ 
 }
