@@ -97,8 +97,7 @@
 	max-width: 600px;
 	margin: 0 auto;
 }
-
-ol {
+.sameforall {
 	list-style: none;
 	padding: 0;
 }
@@ -107,7 +106,7 @@ li + li {
 	margin-top: 1rem;
 }
 
-li {
+.item {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
@@ -118,7 +117,7 @@ li {
 	box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
 }
 
-li::before {
+.item::before {
 	counter-increment: list-item;
 	content: counter(list-item);
 	font-size: 3rem;
@@ -134,7 +133,7 @@ li::before {
 	align-items: center;
 }
 
-li:nth-child(even) {
+.item:nth-child(even) {
 	flex-direction: row-reverse;
 	background: lavender;
 	margin-right: -2rem;
