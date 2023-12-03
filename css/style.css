@@ -489,3 +489,51 @@ header {
   height: auto;
  
 }
+
+article {
+	max-width: 70rem;
+	margin: 0 auto;
+	border: 0.18rem solid lightgrey;
+	padding: clamp(1rem, 2vw, 3rem);
+	border-radius: 0.5rem;
+}
+
+h1, dl {
+	margin: 0;
+}
+
+article > * + * {
+	margin-top: 1rem;
+}
+
+dl {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+	gap: 1rem;
+}
+
+dl > div {
+	background: antiquewhite;
+	padding: 1rem;
+}
+
+dl > div:nth-child(4n - 2) {
+	background: lavenderblush;
+}
+
+dl > div:nth-child(4n - 1) {
+	background: azure;
+}
+
+dl > div:nth-child(4n) {
+	background: lavender;
+}
+
+dt {
+	font-weight: 700;
+	font-size: 1.3rem;
+}
+
+dd {
+	margin: 0;
+}
